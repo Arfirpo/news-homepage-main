@@ -17,7 +17,6 @@ body {
 }
 .container {
   position: relative;
-  border: 1px solid #000;
   width: 25em;
   height: 100%;
   margin: 0 auto;
@@ -42,7 +41,6 @@ body {
   margin-bottom: 2em;
 }
 .header__nav__back {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -54,16 +52,22 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 67%;
   height: 100%;
-  padding: 150px 0px 0 20px;
 }
 .header__nav__menu {
+  position: absolute;
+  top: 8em;
+  left: 20px;
   display: flex;
   flex-direction: column;
-  row-gap: 1.3em;
+  row-gap: 1.4em;
   font-size: 1.2em;
+}
+.header__nav__title:hover {
+  cursor: pointer;
+  color: hsl(5, 85%, 63%);
 }
 .header__nav__close-icon {
   position: absolute;
@@ -71,6 +75,34 @@ body {
   right: 1.3em;
   height: 34px;
   width: 34px;
+}
+@media (min-width: 75rem) {
+  .header {
+    margin-bottom: 55px;
+    height: 100%;
+  }
+  .header__logo {
+    width: 64px;
+    height: 40px;
+  }
+  .header__nav {
+    padding: 8px 0;
+  }
+  .header__nav__back {
+    position: unset;
+    background-color: unset;
+  }
+  .header__nav__front {
+    width: unset;
+    position: unset;
+  }
+  .header__nav__menu {
+    height: 22px;
+    font-size: 1.34em;
+    gap: 1em;
+    position: unset;
+    flex-direction: row;
+  }
 }
 
 .main-container {

@@ -1,7 +1,6 @@
 @use 'vrs';
 
 .header{
-    // border: 1px solid #d61313;
     width: 100%;
     height: 2em;
     display: flex;
@@ -9,7 +8,6 @@
     align-items: stretch;
     margin-bottom: 2em;
     &__nav__back{
-        display: none;
         position: absolute;
         top: 0;
         left: 0;
@@ -21,16 +19,22 @@
         position: absolute;
         top: 0;
         right: 0;
-        background-color: #fff;
+        background-color: vrs.$white;
         width: 67%;
         height: 100%;
-        padding: 150px 0px 0 20px;
     }
     &__nav__menu{
+        position: absolute;
+        top: 8em;
+        left: 20px;
         display: flex;
         flex-direction: column;
-        row-gap: 1.3em;
+        row-gap: 1.4em;
         font-size: 1.2em;
+    }
+    &__nav__title:hover{
+        cursor: pointer;
+        color: vrs.$softRed;
     }
     &__nav__close-icon{
         position: absolute;
@@ -38,6 +42,33 @@
         right: 1.3em;
         height: 34px;
         width: 34px;
+    }
+    @media (min-width:75rem) {
+        margin-bottom: 55px;
+        height: 100%;
+        &__logo{
+            width: 64px;
+            height: 40px;
+        }
+        &__nav{
+            padding: 8px 0;
+            &__back{
+                position: unset;
+                background-color: unset;
+            }
+            &__front{
+                width: unset;
+                position: unset;
+            }
+            &__menu{
+                height: 22px;
+                font-size: 1.34em;
+                gap: 1em;
+                position: unset;
+                flex-direction: row;
+                
+            }
+        }
     }
 }
 
