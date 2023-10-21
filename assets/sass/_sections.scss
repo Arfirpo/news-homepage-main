@@ -1,12 +1,15 @@
 @use 'vrs';
 
 .container{
-    // border: 1px solid #000;
+    border: 1px solid #000;
     width: 25em;
     height: 100%;
     margin: 0 auto;
     padding: 1.73em 1em;
+    @media (min-width:75rem) {
+        width: 74.2em;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
 }
-
-
-
