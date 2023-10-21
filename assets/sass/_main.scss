@@ -129,6 +129,7 @@
     }
     @media (min-width:75rem) {
         width: 100%;
+        height: 720px;
         display: grid;
         justify-content: space-between;
         grid-template-columns: repeat(3, 1fr);
