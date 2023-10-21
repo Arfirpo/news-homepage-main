@@ -135,6 +135,7 @@
         grid-template-rows: repeat(10, 4.8em);
         justify-content: center;
         column-gap: 2em;
+        margin-bottom: 2em;
         .first-section{
             grid-row: 1 / 5;
             grid-column: 1 / 3;

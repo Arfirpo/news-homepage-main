@@ -1,8 +1,11 @@
 .attribution { 
     font-size: .733em; 
     text-align: center; 
-}
-.attribution a { 
-    text-decoration: none;
+    & a{
+        text-decoration: none;
     color: hsl(228, 45%, 44%); 
+    }
+    @media (min-width: 75rem) {
+        font-size: 0.933em;
+    }
 }
