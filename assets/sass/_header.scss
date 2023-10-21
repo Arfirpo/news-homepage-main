@@ -26,7 +26,7 @@
     &__nav__menu{
         position: absolute;
         top: 8em;
-        left: 20px;
+        left: 1.33em;
         display: flex;
         flex-direction: column;
         row-gap: 1.4em;
@@ -40,18 +40,18 @@
         position: absolute;
         top: 1em;
         right: 1.3em;
-        height: 34px;
-        width: 34px;
+        height: 2.267em;
+        width: 2.267em;
     }
     @media (min-width:75rem) {
-        margin-bottom: 55px;
+        margin-bottom: 3.667em;
         height: 100%;
         &__logo{
-            width: 64px;
-            height: 40px;
+            width: 4.267em;
+            height: 2.667em;
         }
         &__nav{
-            padding: 8px 0;
+            padding: .533em 0;
             &__back{
                 position: unset;
                 background-color: unset;
@@ -61,7 +61,7 @@
                 position: unset;
             }
             &__menu{
-                height: 22px;
+                height: 1.467em;
                 font-size: 1.34em;
                 gap: 1em;
                 position: unset;
