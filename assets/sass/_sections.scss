@@ -1,6 +1,7 @@
 @use 'vrs';
 
 .container{
+    position: relative;
     border: 1px solid #000;
     width: 25em;
     height: 100%;
@@ -8,6 +9,7 @@
     padding: 1.73em 1em;
     @media (min-width:75rem) {
         width: 74.2em;
+        margin-top: 2.8em;
         display: flex;
         flex-direction: column;
         padding: 0;

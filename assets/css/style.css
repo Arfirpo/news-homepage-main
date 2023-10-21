@@ -16,6 +16,7 @@ body {
   src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 .container {
+  position: relative;
   border: 1px solid #000;
   width: 25em;
   height: 100%;
@@ -25,6 +26,7 @@ body {
 @media (min-width: 75rem) {
   .container {
     width: 74.2em;
+    margin-top: 2.8em;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -39,7 +41,7 @@ body {
   align-items: stretch;
   margin-bottom: 2em;
 }
-.header .header__nav__back {
+.header__nav__back {
   display: none;
   position: absolute;
   top: 0;
@@ -48,7 +50,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.386);
 }
-.header .header__nav__back .header__nav__front {
+.header__nav__front {
   position: absolute;
   top: 0;
   right: 0;
@@ -57,16 +59,16 @@ body {
   height: 100%;
   padding: 150px 0px 0 20px;
 }
-.header .header__nav__back .header__nav__front .header__nav__menu {
+.header__nav__menu {
   display: flex;
   flex-direction: column;
-  row-gap: 27px;
+  row-gap: 1.3em;
   font-size: 1.2em;
 }
-.header .header__nav__back .header__nav__front .header__nav__close-icon {
+.header__nav__close-icon {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 1em;
+  right: 1.3em;
   height: 34px;
   width: 34px;
 }
